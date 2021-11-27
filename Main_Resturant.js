@@ -8,11 +8,7 @@ firebase.database().ref().child('Resturant').orderByChild('uid').equalTo(a).once
         var data = snap.toJSON();
         // console.log("Not json",snap)
         // console.log("JSON",data)
-
-
-
         if (data == null) {
-
             firebase.database().ref().child('User')
                 .orderByChild('uid')
                 .equalTo(a)
